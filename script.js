@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
     normalImg.src = `Who/Who normal/${randomImage}.jpg`;
 
     // 正解テキストを設定
-    answerText.textContent = `やったね。${randomImage}だよ。！`;
+    answerText.textContent = `やったね。${randomImage}だよ。`;
 
     // ボタンクリックの処理
     const btn = document.getElementById('answerBtn');
@@ -40,3 +40,4 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 });
+
