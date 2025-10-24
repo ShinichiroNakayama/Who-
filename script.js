@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // 画像配列の定義
     const images = [
         'Kazuya',
-        'Kiyoshi Uchiyama',
         'TRAN Huu Thang',
         '克彦',
         '勝',
@@ -40,5 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 });
+
 
 
