@@ -11,17 +11,29 @@
             margin-top: 10px;
             color: #333;
         }
+
+        /* 追加: 画像サイズを制限して縦横比を保持 */
+        img {
+            max-width: 100%;      /* コンテナ幅を超えない */
+            height: auto;         /* 縦横比を保持 */
+            display: block;
+        }
+
+        /* 固定サイズにしたい場合（例: 横幅最大400px、高さ最大300px） */
+        .preview-image {
+            max-width: 400px;
+            max-height: 300px;
+            width: 100%;
+            object-fit: contain;  /* 画像を歪めず収める */
+        }
     </style>
 </head>
 <body>
-  <h1>Who?</h1>
-  <img src="Who/Who silhouette/ucchii.jpg">
+  <img id="silhouette" class="preview-image" src="Who/Who silhouette/ucchii.jpg" alt="silhouette">
   <br>
-  <button id="answerBtn">だ～れだ？</button>
-  <img id="normalImage" src="Who/Who normal/ucchii.jpg">
+  <button id="answerBtn">わかった？</button>
+  <img id="normalImage" class="preview-image" src="Who/Who normal/ucchii.jpg" alt="normal">
   <p id="answerText"></p>
   <script src="script.js"></script>
 </body>
-
 </html>
-
